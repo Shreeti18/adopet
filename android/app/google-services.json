@@ -1,0 +1,30 @@
+{
+  "project_info": {
+    "project_number": "965733995268",
+    "firebase_url": "https://adopet-c6c96-default-rtdb.asia-southeast1.firebasedatabase.app",
+    "project_id": "adopet-c6c96",
+    "storage_bucket": "adopet-c6c96.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:965733995268:android:7fcb51975bdd87947cb651",
+        "android_client_info": {
+          "package_name": "com.example.app_flutter_pet_adoption"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAVEg-FdsIvm2zDxJ4BTjFRSy7_3dQYyt0"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

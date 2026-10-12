@@ -17,10 +17,7 @@ import 'package:flutter/foundation.dart'
 class DefaultFirebaseOptions {
   static FirebaseOptions get currentPlatform {
     if (kIsWeb) {
-      throw UnsupportedError(
-        'DefaultFirebaseOptions have not been configured for web - '
-        'you can reconfigure this by running the FlutterFire CLI again.',
-      );
+      return web;
     }
     switch (defaultTargetPlatform) {
       case TargetPlatform.android:
@@ -57,7 +54,6 @@ class DefaultFirebaseOptions {
     databaseURL: 'https://adopet-c6c96-default-rtdb.asia-southeast1.firebasedatabase.app',
     storageBucket: 'adopet-c6c96.firebasestorage.app',
   );
-
   static const FirebaseOptions ios = FirebaseOptions(
     apiKey: 'AIzaSyAQQeCoI9rCQcdco4iq_YTfeEd-VtVOaJc',
     appId: '1:965733995268:ios:b091d371e0c1f2c47cb651',
@@ -66,5 +62,15 @@ class DefaultFirebaseOptions {
     databaseURL: 'https://adopet-c6c96-default-rtdb.asia-southeast1.firebasedatabase.app',
     storageBucket: 'adopet-c6c96.firebasestorage.app',
     iosBundleId: 'com.example.petApp',
+  );
+  static const FirebaseOptions web = FirebaseOptions(
+    apiKey: 'AIzaSyDJm15OauqKlXay7jzLb9zHLLDcvZXv8aw',
+    appId: '1:965733995268:web:5b562769b1d470cc7cb651',
+    messagingSenderId: '965733995268',
+    projectId: 'adopet-c6c96',
+    authDomain: 'adopet-c6c96.firebaseapp.com',
+    databaseURL: 'https://adopet-c6c96-default-rtdb.asia-southeast1.firebasedatabase.app',
+    storageBucket: 'adopet-c6c96.firebasestorage.app',
+    measurementId: 'G-3T9NE976S3',
   );
 }
